@@ -1,0 +1,7 @@
+# Incohesive Frameworld Origin
+
+on_game_start_country = {	
+	events = { 
+		incohesive_frameworld_origin.000 # Event that finishes system setup
+	} 
+}	

@@ -1,0 +1,125 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_origin_KTG_incohesive"
+		texturefile = "gfx/event_pictures/origins/origin_KTG_incohesive.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_origin_tree_incohesive"
+		texturefile = "gfx/event_pictures/origins/origin_tree_incohesive.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_origin_syncretic_incohesive"
+		texturefile = "gfx/event_pictures/origins/origin_syncretic_incohesive.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_origin_shrouded_incohesive"
+		texturefile = "gfx/event_pictures/origins/origin_shrouded_incohesive.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_origin_shoulders_incohesive"
+		texturefile = "gfx/event_pictures/origins/origin_shoulders_incohesive.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_origin_consolidation_incohesive"
+		texturefile = "gfx/event_pictures/origins/origin_consolidation_incohesive.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_origin_overtuned_incohesive"
+		texturefile = "gfx/event_pictures/origins/origin_overtuned_incohesive.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_origin_gaia_incohesive"
+		texturefile = "gfx/event_pictures/origins/origin_gaia_incohesive.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_origin_dragons_incohesive"
+		texturefile = "gfx/event_pictures/origins/origin_dragons_incohesive.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_origin_mean_penpals_incohesive"
+		texturefile = "gfx/event_pictures/origins/origin_mean_penpals_incohesive.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_origin_penpals_incohesive"
+		texturefile = "gfx/event_pictures/origins/origin_penpals_incohesive.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_origin_research_penpals_incohesive"
+		texturefile = "gfx/event_pictures/origins/origin_research_penpals_incohesive.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_origin_thrifty_penpals_incohesive"
+		texturefile = "gfx/event_pictures/origins/origin_thrifty_penpals_incohesive.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_origin_larp_penpals_incohesive"
+		texturefile = "gfx/event_pictures/origins/origin_larp_penpals_incohesive.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_origin_hive_incohesive"
+		texturefile = "gfx/event_pictures/origins/origin_hive_incohesive.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_origin_birch_incohesive"
+		texturefile = "gfx/event_pictures/origins/origin_birch_incohesive.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_origin_frameworld_incohesive"
+		texturefile = "gfx/event_pictures/origins/origin_frameworld_incohesive.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_origin_lithoid_incohesive"
+		texturefile = "gfx/event_pictures/origins/origin_lithoid_incohesive.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_origin_gate_incohesive"
+		texturefile = "gfx/event_pictures/origins/origin_gate_incohesive.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_origin_necro_incohesive"
+		texturefile = "gfx/event_pictures/origins/origin_necro_incohesive.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_origin_mecha_incohesive"
+		texturefile = "gfx/event_pictures/origins/origin_mecha_incohesive.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_origin_clones_incohesive"
+		texturefile = "gfx/event_pictures/origins/origin_clones_incohesive.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_origin_cave_dweller_incohesive"
+		texturefile = "gfx/event_pictures/origins/origin_cave_dweller_incohesive.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_origin_lord_ocrams_wild_ride_incohesive"
+		texturefile = "gfx/event_pictures/origins/origin_lord_ocrams_wild_ride_incohesive.dds"
+		alwaystransparent = yes
+	}
+}
+
+	

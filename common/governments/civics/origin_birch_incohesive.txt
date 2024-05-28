@@ -1,0 +1,25 @@
+origin_birch_incohesive = {
+	is_origin = yes
+	icon = "gfx/interface/icons/origins/origins_birch_world.dds"
+	picture = GFX_origin_birch
+	description = "origin_birch_effects"
+	starting_colony = pc_origin_birch
+	habitability_preference = pc_birch
+	preferred_planet_class_neighbor = no
+	max_once_global = no
+	flags = { custom_start_screen }
+	initializers = { ehof_birch_init }
+
+	possible = {
+		civics = {
+			nor = {
+				text = civic_tooltip_not_idyllic_bloom
+				value = civic_idyllic_bloom
+				value = civic_hive_idyllic_bloom
+			}
+		}
+	}
+	random_weight = {
+		base = 0
+	}
+}
