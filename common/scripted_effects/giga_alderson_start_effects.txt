@@ -1,0 +1,43 @@
+spawn_alderson_guaranteed_1_effect = {
+    spawn_planet = {
+		class = "pc_alderson_slice_gaia_shattered"
+		location = solar_system
+		orbit_angle_offset = 135
+		orbit_distance_offset = 180
+		size = 90
+		init_effect = {
+			set_name = "Hypersegment E"
+			prevent_anomaly = yes
+			set_planet_flag = forbid_guillis_planet_modifiers
+			set_planet_flag = gpm_has_planet_rings
+			set_planet_flag = excognitor_planet
+			set_planet_flag = giga_alderson_gaia
+			generate_alderson_01_primitives_on_planet = yes
+			last_created_country = {
+				establish_communications_no_message = root
+			}
+		}
+	}
+}
+
+spawn_alderson_guaranteed_2_effect = {
+    spawn_planet = {
+		class = "pc_alderson_slice_gaia_shattered" 
+		location = solar_system
+		orbit_angle_offset = 180
+		orbit_distance_offset = 178.75
+		size = 90
+		init_effect = {
+			set_name = "Hypersegment F"
+			prevent_anomaly = yes
+			set_planet_flag = forbid_guillis_planet_modifiers
+			set_planet_flag = gpm_has_planet_rings
+			set_planet_flag = dominion_planet
+			set_planet_flag = giga_alderson_gaia
+			generate_alderson_02_primitives_on_planet = yes
+			last_created_country = {
+				establish_communications_no_message = root
+			}
+		}
+	}
+}

@@ -2,13 +2,15 @@ origin_birch_incohesive = {
 	is_origin = yes
 	icon = "gfx/interface/icons/origins/origins_birch_world.dds"
 	picture = GFX_origin_birch
-	description = "origin_birch_effects"
+	description = origin_birch_incohesive_effect_desc
+
 	starting_colony = pc_origin_birch
 	habitability_preference = pc_birch
 	preferred_planet_class_neighbor = no
+
 	max_once_global = no
 	flags = { custom_start_screen }
-	initializers = { ehof_birch_init }
+	initializers = { ehof_generic_init }
 
 	possible = {
 		civics = {

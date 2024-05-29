@@ -1,16 +1,14 @@
 origin_frameworld_incohesive = {
 	is_origin = yes
-	picture = GFX_origin_frameworld_incohesive
+	picture = GFX_origin_frameworld
 	icon = gfx/interface/icons/origins/origin_frameworld.dds
 
 	description = origin_frameworld_incohesive_effect_desc
 
-	initializers = {
-		ehof_frame_init
-	}
+	initializers = { ehof_generic_init }
   
 	starting_colony = pc_giga_frameworld
-  	preferred_planet_class_neighbor = no
+  preferred_planet_class_neighbor = no
 
   modifier = {
     # it's SO beneficial for frame that it should probably be nerfed real hard

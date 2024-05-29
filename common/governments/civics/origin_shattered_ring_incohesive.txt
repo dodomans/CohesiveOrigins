@@ -1,0 +1,31 @@
+origin_shattered_ring_incohesive = {
+	is_origin = yes
+	icon = "gfx/interface/icons/origins/origins_shattered_ring.dds"
+	picture = GFX_origin_shattered_ring
+
+	starting_colony = pc_shattered_ring_habitable
+	habitability_preference = pc_shattered_ring_habitable
+
+	initializers = { ehof_generic_init }
+
+	preferred_planet_class_neighbor = no
+
+	playable = {
+		host_has_dlc = Federations
+	}
+
+	possible = {
+		civics = {
+			NOT = { value = civic_agrarian_idyll }
+			NOR = {
+				text = civic_tooltip_not_anglers
+				value = civic_anglers
+				value = civic_corporate_anglers
+			}
+		}
+	}
+
+	description = "origin_shattered_ring_incohesive_effect_desc"
+
+	flags = { custom_start_screen }
+}

@@ -1,0 +1,13 @@
+origin_alderson_incohesive = {
+    is_origin = yes
+	icon = "gfx/interface/icons/origins/origins_alderson_disk.dds"
+	picture = GFX_origin_alderson
+	description = origin_alderson_incohesive_effect_desc
+
+	starting_colony = pc_alderson_slice_gaia_shattered
+	habitability_preference = pc_alderson_slice_gaia_shattered
+	preferred_planet_class_neighbor = no
+
+	initializers = { ehof_generic_init }
+	flags = { custom_start_screen starting_event }
+}
