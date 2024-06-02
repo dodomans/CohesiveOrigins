@@ -1,0 +1,5 @@
+on_game_start = {
+	events = {
+		ehof_incohesive_life_seeded.1
+	}
+}

@@ -1,0 +1,38 @@
+origin_life_seeded_incohesive = {
+	is_origin = yes
+	icon = "gfx/interface/icons/origins/origins_life_seeded.dds"
+	picture = GFX_origin_life_seeded
+
+	starting_colony = pc_gaia
+	habitability_preference = pc_gaia
+	preferred_planet_class_neighbor = no
+
+    initializers = { ehof_generic_init }
+
+	playable = {
+		host_has_dlc = "Apocalypse"
+	}
+
+	possible = {
+		authority = { NOT = { value = auth_machine_intelligence } }
+		civics = {
+			NOT = {
+				value = civic_toxic_baths
+			}
+			NOR = {
+				text = civic_tooltip_not_relentless_industrialists
+				value = civic_relentless_industrialists
+				value = civic_corporate_relentless_industrialists
+			}
+		}
+	}
+
+	description = "origin_tooltip_life_seeded_effects"
+	negative_description = "origin_tooltip_life_seeded_negative_effects"
+	random_weight = {
+		base = 5
+	}
+}
+
+
+# create_life_seeded_planet = yes
