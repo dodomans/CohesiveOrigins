@@ -44,7 +44,8 @@ ehof_equatorial_shipyard_incohesive = {
             has_ring = no
             modifiers = none
 
-            starting_planet = yes
+            #starting_planet = yes
+            home_planet = yes
             flags = { ignore_startup_effect giga_equatorial_shipyard }
             init_effect = {
                 set_name = "Processing Ring"
@@ -58,6 +59,7 @@ ehof_equatorial_shipyard_incohesive = {
                 set_planet_flag = megastructure
                 set_planet_flag = colony_event			# Vanilla uses to prevent unwanted events on planets
                 set_planet_flag = giga_equatorial_shipyard
+                set_planet_flag = ehof_starting_colony # have to set otherwise you die at start of game
                 add_modifier = { modifier = ringyard_alloys days = -1 }
             }
         }
