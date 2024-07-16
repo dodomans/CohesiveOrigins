@@ -6,5 +6,6 @@ has_ehof_origin = {
         has_origin = origin_void_dwellers_incohesive
         has_origin = origin_void_machines_incohesive
         has_origin = origin_shattered_ring_incohesive
+        has_origin = origin_equatorial_shipyard_incohesive
     }
 }

@@ -48,3 +48,7 @@
 	origin_void_machines_incohesive_desc: ""
 
 	trait_void_dweller_2_incohesive: "Zero-G Optimized"
+
+	origin_equatorial_shipyard_incohesive: "Away on an Equatorial Shipyard"
+	origin_equatorial_shipyard_incohesive_desc: "Having evolved on a ring around the scorching heat of a molten world, dwindling water and food supplies have forced this species to leave their home system."
+	origin_equatorial_shipyard_incohesive_effects: "Start on an Equatorial Shipyard in the §LWormhole-Cohesive Cluster§! around a molten world.\n- Gain access to £society_research£ §L$tech_hydroponics$§! technology if not a machine species."

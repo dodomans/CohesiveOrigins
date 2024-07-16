@@ -1,0 +1,14 @@
+origin_equatorial_shipyard_incohesive = {
+    is_origin = yes
+    icon= "gfx/interface/icons/origins/origins_equatorial_shipyard.dds"
+    picture = GFX_origin_equatorial_shipyard
+    description = "origin_equatorial_shipyard_incohesive_effects"
+
+    starting_colony = pc_equatorial_shipyard
+    preferred_planet_class_neighbor = no
+
+    #initializers = { giga_equatorial_shipyard_start }
+    initializers = { ehof_generic_init }
+
+    flags = { custom_start_screen }
+}

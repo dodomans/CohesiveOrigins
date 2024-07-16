@@ -967,6 +967,11 @@ country_event = {
 					pgate_spawn_35 = yes
 				}
 			}
+			origin_equatorial_shipyard_incohesive = {
+				last_created_system = {
+					pgate_spawn_35 = yes
+				}
+			}
 		}
 		last_created_system = {
 			save_global_event_target_as = ehofo_new_system
@@ -1203,6 +1208,14 @@ country_event = {
 								orbit_distance = 45
 							}
 						}
+					}
+				}
+			}
+			origin_equatorial_shipyard = {
+				capital_scope = {
+					planet = {
+						generate_start_buildings_and_districts = yes
+						save_global_event_target_as = ehof_origin_homeworld_fix
 					}
 				}
 			}
