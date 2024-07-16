@@ -150,6 +150,21 @@ ehof_unified_new_initialize_system_2 = {
                 }
             }
         }
+        origin_equatorial_shipyard_incohesive = {
+            no_scope = {
+                spawn_system = {
+                    min_orientation_angle = $ehof_init_min_angle$
+                    max_orientation_angle = $ehof_init_max_angle$
+                    min_distance >= $min_distance$
+                    max_distance <= $max_distance$
+                    hyperlane = no
+                    initializer = ehof_equatorial_shipyard_incohesive
+                    effect = {
+                        save_event_target_as = giga_last_ehof_spawn
+                    }
+                }
+            }
+        }
     }
 }
 #########################################################################

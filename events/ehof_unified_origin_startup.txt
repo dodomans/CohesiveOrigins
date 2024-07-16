@@ -1206,6 +1206,14 @@ country_event = {
 					}
 				}
 			}
+			origin_equatorial_shipyard = {
+				capital_scope = {
+					planet = {
+						generate_start_buildings_and_districts = yes
+						save_global_event_target_as = ehof_origin_homeworld_fix
+					}
+				}
+			}
         }
 		giga_set_all_leaders_homeworld = {
 			planet = event_target:ehof_origin_homeworld_fix
