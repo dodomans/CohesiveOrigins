@@ -17,7 +17,7 @@ ehof_frame_cohesive_cluster = {
 			orbit_distance = 0.00001
 			size = 16
 			home_planet = yes
-			flags = { ignore_startup_effect giga_frameworld ehof_origin_new_planet }
+			flags = { "ignore_startup_effect" "giga_frameworld"  "ehof_starting_colony" }
 		}
 	}
 

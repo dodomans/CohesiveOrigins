@@ -1,0 +1,10 @@
+has_ehof_origin = {
+    or = {
+        has_origin = origin_birch_incohesive
+        has_origin = origin_alderson_incohesive
+        has_origin = origin_frameworld_incohesive
+        has_origin = origin_void_dwellers_incohesive
+        has_origin = origin_void_machines_incohesive
+        has_origin = origin_shattered_ring_incohesive
+    }
+}

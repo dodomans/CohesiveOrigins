@@ -32,6 +32,7 @@ origin_life_seeded_incohesive = {
 	random_weight = {
 		base = 5
 	}
+	ai_playable = { always = no }
 }
 
 

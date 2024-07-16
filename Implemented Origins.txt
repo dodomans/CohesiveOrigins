@@ -1,4 +1,17 @@
-Frameworld
-Decaying Birch 
-Alderson Disk 
-Shattered Ring
+# Frameworld
+# Decaying Birch
+# Alderson Disk
+# Shattered Ring
+# Life Seeded
+
+effect = {
+    random_system = {
+        random_system_planet = {
+            limit = {
+                giga_is_icy_asteroid = yes
+                has_resource = energy
+            }
+
+        }
+    }
+}

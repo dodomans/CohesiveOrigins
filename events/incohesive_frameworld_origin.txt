@@ -17,11 +17,11 @@ country_event = {
 	}
 
 	immediate = {
-		# colony ship cost modifier
-		add_modifier = {
-			modifier = frameworld_origin_colony_cost
-		}
-		
+		# colony ship cost modifier OBSOLETE
+		#add_modifier = {
+		#	modifier = frameworld_origin_colony_cost
+		#}
+
 		set_variable = {
 			which = giga_frameworld_megastructure_cost
 			value = 1
@@ -132,19 +132,19 @@ country_event = {
 			giga_frameworld_update_entity_with_fallback = {
 				WHO = root
 			}
-			
+
 			# spawn defensive stations
 			giga_frameworld_spawn_starting_defensive_stations = { WHO = root }
-			
+
 			# clear normal planet stuff we can't use
 			clear_deposits = yes
 			#remove_all_districts = yes # this wrecks our lab due to not enough building slots
-			
+
 			# strip extra resources from the black hole, we want to make sure it's clean
 			solar_system.star = {
 				clear_deposits = yes
 			}
-			
+
 			# make sure the variables are set up for expansion decisions
 			giga_frameworld_init_variables = yes
 
@@ -153,9 +153,9 @@ country_event = {
 				which = frameworld_ai_artisan_modifier
 				value = 0
 			}
-			
+
 			##### set up deposits
-			
+
 			# an appropriate core
 			if = {
 				limit = { root = { is_regular_empire = yes }	}
@@ -169,7 +169,7 @@ country_event = {
 				limit = { root = { is_machine_empire = yes }	}
 				add_deposit = d_frameworld_core
 			}
-			
+
 			# max mining districts
 			add_deposit = d_frameworld_remnants
 
@@ -184,7 +184,7 @@ country_event = {
 
 			# job upkeep adjustment
 			add_deposit = d_giga_job_upkeep
-			
+
 			##### replace districts
 			add_modifier = {
 				modifier = frameworld_building_wreck_fix
@@ -215,7 +215,7 @@ country_event = {
 				add_district = district_giga_frameworld_nexus
 				remove_district = district_nexus
 			}
-			
+
 			# industrial
 			while = {
 				limit = {
@@ -224,7 +224,13 @@ country_event = {
 				if = {
 					# alternate factory-foundry for normal empires
 					limit = {
-						owner = { is_gestalt = no }
+						owner = {
+							or = {
+								is_gestalt = no
+								has_civic = civic_machine_obsessional_directive
+								has_civic = civic_machine_servitor
+							}
+						}
 					}
 					if = {
 						limit = { not = { has_planet_flag = foundry_next }}
@@ -243,7 +249,7 @@ country_event = {
 				remove_district = district_industrial
 			}
 			remove_planet_flag = foundry_next
-			
+
 			# energy
 			while = {
 				limit = {
@@ -252,7 +258,7 @@ country_event = {
 				add_district = district_giga_frameworld_generator
 				remove_district = district_generator
 			}
-			
+
 			# mining
 			while = {
 				limit = {
@@ -261,7 +267,7 @@ country_event = {
 				add_district = district_giga_frameworld_mining
 				remove_district = district_mining
 			}
-			
+
 			# food
 			while = {
 				limit = {
@@ -270,10 +276,10 @@ country_event = {
 				add_district = district_giga_frameworld_farming
 				remove_district = district_farming
 			}
-			
+
 			#####
 			remove_modifier = frameworld_building_wreck_fix
-			
+
 			# get rid of any bad districts or buildings which can't be supported
 			validate_planet_buildings_and_districts = yes
 

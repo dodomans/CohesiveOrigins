@@ -1,0 +1,9 @@
+has_void_dweller_origin = {
+    OR = {
+        has_origin = origin_void_dwellers
+        has_origin = origin_void_machines
+        # My Origins
+        has_origin = origin_void_dwellers_incohesive
+        has_origin = origin_void_machines_incohesive
+    }
+}

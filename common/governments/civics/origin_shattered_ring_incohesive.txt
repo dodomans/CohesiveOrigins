@@ -28,4 +28,9 @@ origin_shattered_ring_incohesive = {
 	description = "origin_shattered_ring_incohesive_effect_desc"
 
 	flags = { custom_start_screen }
+
+	random_weight = {
+		base = 0
+	}
+	ai_playable = { always = no }
 }

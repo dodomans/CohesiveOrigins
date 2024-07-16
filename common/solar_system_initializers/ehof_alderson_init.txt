@@ -16,7 +16,8 @@ ehof_alderson_cohesive_cluster = {
 			orbit_distance = 180
 			size = 90
 			home_planet = yes
-            flags = { ehof_origin_new_planet colonize_me_instead }
+            flags = { ehof_origin_new_planet ehof_starting_colony }
+			init_effect = { save_event_target_as = ehof_origin_homeworld_fix }
 		}
 	}
 

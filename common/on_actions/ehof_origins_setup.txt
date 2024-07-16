@@ -1,5 +1,5 @@
 on_game_start = {
 	events = {
-		ehof_incohesive_birch.1
-	}
+		ehof_unified.1
+	}    
 }

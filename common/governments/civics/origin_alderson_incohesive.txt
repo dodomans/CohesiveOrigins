@@ -10,4 +10,9 @@ origin_alderson_incohesive = {
 
 	initializers = { ehof_generic_init }
 	flags = { custom_start_screen starting_event }
+
+	random_weight = {
+		base = 0
+	}
+	ai_playable = { always = no }
 }

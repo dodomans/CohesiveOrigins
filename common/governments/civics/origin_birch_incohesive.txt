@@ -1,4 +1,5 @@
 origin_birch_incohesive = {
+
 	is_origin = yes
 	icon = "gfx/interface/icons/origins/origins_birch_world.dds"
 	picture = GFX_origin_birch
@@ -24,4 +25,5 @@ origin_birch_incohesive = {
 	random_weight = {
 		base = 0
 	}
+	ai_playable = { always = no }
 }

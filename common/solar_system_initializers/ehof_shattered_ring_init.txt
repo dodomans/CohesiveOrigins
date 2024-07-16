@@ -49,7 +49,7 @@ ehof_shattered_ring_cohesive_cluster = {
 		deposit_blockers = none
 		modifiers = none
 		starting_planet = yes
-		flags = { ignore_startup_effect megastructure colonize_me_instead }
+		flags = { ignore_startup_effect megastructure ehof_starting_colony }
 		init_effect = {
 			prevent_anomaly = yes
 		}

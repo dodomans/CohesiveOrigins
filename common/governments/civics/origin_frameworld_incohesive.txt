@@ -12,8 +12,8 @@ origin_frameworld_incohesive = {
 
   modifier = {
     # it's SO beneficial for frame that it should probably be nerfed real hard
-    planetary_ascension_effect_mult = -0.75
-    planetary_ascension_cost_mult = 0.5
+    planetary_ascension_effect_mult = -0.5
+    planetary_ascension_cost_mult = 1
   }
   possible = {
     civics = {
@@ -35,7 +35,5 @@ origin_frameworld_incohesive = {
 	random_weight = {
 		base = 0
 	}
-	ai_weight = {
-		base = 0
-   }
+    ai_playable = { always = no }
 }
