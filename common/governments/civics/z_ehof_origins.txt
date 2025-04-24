@@ -1,0 +1,160 @@
+origin_ehof_frameworld =    {
+    is_origin = yes
+    icon = "gfx/interface/icons/origins/origin_frameworld.dds"
+    picture = GFX_origin_frameworld
+    flags = { custom_start_screen }
+    description = origin_tooltip_frameworld_effects
+    starting_colony = pc_giga_frameworld
+    preferred_planet_class_neighbor = no
+    modifier = {
+        # it's SO beneficial for frame that it should probably be nerfed real hard
+        planetary_ascension_effect_mult = -0.5
+        planetary_ascension_cost_mult = 1
+    }
+    initializers = { ehof_dummy }
+    swap_type = {
+        trigger = {
+            is_scope_valid = yes
+            has_authority = auth_machine_intelligence
+            nor = {
+                has_country_flag = driven_memory_aggregator
+                has_country_flag = driven_neural_chorus
+            }
+        }
+        modifier = {
+            colony_start_num_pops_add = -1
+        }
+    }
+    possible = {
+        civics = {
+            not = {
+                value = civic_agrarian_idyll
+            }
+            nor = {
+                text = giga_civic_tooltip_not_environmental_architects
+                value = civic_environmental_architects
+                value = civic_environmental_architects_megacorp
+                value = civic_environmental_architects_hive
+                value = civic_environmental_architects_machine
+            }
+            nor = {
+                text = civic_tooltip_not_idyllic_bloom
+                value = civic_idyllic_bloom
+                value = civic_hive_idyllic_bloom
+            }
+            nor = {
+                text = civic_tooltip_not_relentless_industrialists
+                value = civic_relentless_industrialists
+                value = civic_corporate_relentless_industrialists
+            }
+            nor = {
+                text = civic_tooltip_not_guided
+                value = civic_guided_sapience
+                value = civic_corporate_guided_sapience
+                value = civic_hive_guided_sapience
+                value = civic_machine_guided_sapience
+            }
+        }
+    }
+    ai_playable = { always = no }
+}
+# TODO - These origins are all not implemented, and used as placeholders for intellij
+origin_ehof_machine = {
+    is_origin = yes
+    icon = "gfx/interface/icons/origins/origins_resource_consolidation.dds"
+    picture = GFX_origin_resource_consolidation
+    starting_colony = pc_machine
+    preferred_planet_class_neighbor = no
+    max_once_global = yes
+    playable = {
+        host_has_dlc = "Synthetic Dawn Story Pack"
+    }
+    initializers = { ehof_dummy }
+    possible = {
+        authority = { value = auth_machine_intelligence }
+        civics = {
+            NOR = {
+                value = civic_machine_servitor
+                value = civic_machine_catalytic_processing
+                value = civic_machine_guided_sapience
+            }
+        }
+    }
+    description = "origin_tooltip_machine_effects"
+    negative_description = "origin_tooltip_machine_negative_effects"
+    ai_playable = { always = no }
+}
+origin_ehof_post_apocalyptic = {
+    is_origin = yes
+    potential = { always = no }
+    description = "origin_tooltip_post_apocalyptic_effects"
+}
+origin_ehof_post_apocalyptic_machines = {
+    is_origin = yes
+    potential = { always = no }
+    description = "origin_tooltip_post_apocalyptic_machines_effects"
+}
+origin_ehof_synthetic_fertility = {
+    is_origin = yes
+    potential = { always = no }
+}
+origin_ehof_lithoid = {
+    is_origin = yes
+    potential = { always = no }
+}
+origin_ehof_broken_shackles = {
+    is_origin = yes
+    potential = { always = no }
+}
+origin_ehof_life_seeded = {
+    is_origin = yes
+    potential = { always = no }
+}
+origin_ehof_remnants = {
+    is_origin = yes
+    potential = { always = no }
+}
+origin_ehof_ocean_paradise = {
+    is_origin = yes
+    potential = { always = no }
+}
+origin_ehof_ocean_machines = {
+    is_origin = yes
+    potential = { always = no }
+}
+origin_ehof_shattered_ring = {
+    is_origin = yes
+    potential = { always = no }
+}
+origin_ehof_syncretic_evolution = {
+    is_origin = yes
+    potential = { always = no }
+}
+origin_ehof_necrophage = {
+    is_origin = yes
+    potential = { always = no }
+}
+origin_ehof_tree_of_life = {
+    is_origin = yes
+    potential = { always = no }
+}
+origin_ehof_payback = {
+    is_origin = yes
+    potential = { always = no }
+}
+origin_ehof_progenitor_hive = {
+    is_origin = yes
+    potential = { always = no }
+}
+origin_ehof_subterranean = {
+    is_origin = yes
+    potential = { always = no }
+}
+origin_ehof_subterranean_machines = {
+    is_origin = yes
+    potential = { always = no }
+}
+origin_ehof_cybernetic_creed = {
+    is_origin = yes
+    potential = { always = no }
+}

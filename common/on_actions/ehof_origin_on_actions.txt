@@ -1,0 +1,6 @@
+# TODO - set the game event to start, do i want on game start or on game start country
+on_game_start = {
+    events = {
+        ehof_origin_setup.001
+    }
+}

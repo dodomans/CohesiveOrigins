@@ -1,0 +1,60 @@
+﻿l_english:
+
+ # ------------------------------------ #
+ origin_ehof_frameworld: "Away on a $origin_frameworld$"
+ origin_ehof_frameworld_desc: "$origin_frameworld_desc$"
+ # ------------------------------------ #
+ origin_ehof_machine: "Cohesive $origin_machine$"
+ origin_ehof_machine_desc: "$origin_machine_desc$"
+ # ------------------------------------ #
+ origin_ehof_post_apocalyptic: "REPLACE_ME"
+ origin_ehof_post_apocalyptic_desc: "REPLACE_ME"
+ # ------------------------------------ #
+ origin_ehof_synthetic_fertility: "REPLACE_ME"
+ origin_ehof_synthetic_fertility_desc: "REPLACE_ME"
+ # ------------------------------------ #
+ origin_ehof_lithoid: "REPLACE_ME"
+ origin_ehof_lithoid_desc: "REPLACE_ME"
+ # ------------------------------------ #
+ origin_ehof_broken_shackles: "REPLACE_ME"
+ origin_ehof_broken_shackles_desc: "REPLACE_ME"
+ # ------------------------------------ #
+ origin_ehof_life_seeded: "REPLACE_ME"
+ origin_ehof_life_seeded_desc: "REPLACE_ME"
+ # ------------------------------------ #
+ origin_ehof_remnants: "REPLACE_ME"
+ origin_ehof_remnants_desc: "REPLACE_ME"
+ # ------------------------------------ #
+ origin_ehof_ocean_paradise: "REPLACE_ME"
+ origin_ehof_ocean_paradise_desc: "REPLACE_ME"
+
+ origin_ehof_ocean_machines: "REPLACE_ME"
+ origin_ehof_ocean_machines_desc: "REPLACE_ME"
+ # ------------------------------------ #
+ origin_ehof_shattered_ring: "REPLACE_ME"
+ origin_ehof_shattered_ring_desc: "REPLACE_ME"
+ # ------------------------------------ #
+ origin_ehof_syncretic_evolution: "REPLACE_ME"
+ origin_ehof_syncretic_evolution_desc: "REPLACE_ME"
+ # ------------------------------------ #
+ origin_ehof_necrophage: "REPLACE_ME"
+ origin_ehof_necrophage_desc: "REPLACE_ME"
+ # ------------------------------------ #
+ origin_ehof_tree_of_life: "REPLACE_ME"
+ origin_ehof_tree_of_life_desc: "REPLACE_ME"
+ # ------------------------------------ #
+ origin_ehof_payback: "REPLACE_ME"
+ origin_ehof_payback_desc: "REPLACE_ME"
+ # ------------------------------------ #
+ origin_ehof_progenitor_hive: "REPLACE_ME"
+ origin_ehof_progenitor_hive_desc: "REPLACE_ME"
+ # ------------------------------------ #
+ origin_ehof_subterranean: "REPLACE_ME"
+ origin_ehof_subterranean_desc: "REPLACE_ME"
+
+ origin_ehof_subterranean_machines: "REPLACE_ME"
+ origin_ehof_subterranean_machines_desc: "REPLACE_ME"
+ # ------------------------------------ #
+ origin_ehof_cybernetic_creed: "REPLACE_ME"
+ origin_ehof_cybernetic_creed_desc: "REPLACE_ME"
+# ------------------------------------ #

@@ -1,0 +1,9 @@
+has_ehof_origin = {
+    or = {
+        has_origin = origin_ehof_frameworld
+        has_origin = origin_ehof_machine
+    }
+}
+ehof_origin_random_system = {
+    has_origin = origin_ehof_machine
+}
