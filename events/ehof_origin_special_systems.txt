@@ -1,0 +1,14 @@
+namespace = ehof_origin_special_system_spawning
+
+country_event = {
+    id = ehof_origin_special_system_spawning.001 # Arc Welders
+    is_triggered_only = yes
+    hide_window = yes
+
+    trigger = {
+        has_origin = origin_arc_welders
+        NOT = { has_country_flag = spawned_arc_furance  }
+    }
+
+
+}

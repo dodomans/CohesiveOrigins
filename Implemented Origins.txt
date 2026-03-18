@@ -1,1 +1,0 @@
-# TODO - Rebuild origin spawning event
