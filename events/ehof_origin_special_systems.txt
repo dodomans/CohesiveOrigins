@@ -10,5 +10,19 @@ country_event = {
         NOT = { has_country_flag = spawned_arc_furance  }
     }
 
+    immediate = {
+        # What fucking scope is this in right now
+        # God I hate ehof code please
 
+        # from = {
+        #     set_country_flag = spawned_arc_furance
+        #     ehof_giga_new_create_new_continuous_system = {
+        #         initializer = arc_welders_construction_system
+        #     }
+        #     event_target:giga_last_ehof_spawn = {
+        #         system_event = { id = ehof_giga_new_on_action.6 }
+        #     }
+        #     log = "Spawning cohesive system - Arc Furnace Rich System"
+        # }
+    }
 }
