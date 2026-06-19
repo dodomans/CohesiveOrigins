@@ -1,6 +1,0 @@
-giga_has_frameworld_origin = {
-    or = {
-        has_origin = origin_frameworld_incohesive
-        has_origin = origin_frameworld
-    }
-}

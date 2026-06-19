@@ -1,0 +1,282 @@
+ehof_origin_initialize_system = {
+    switch = {
+        trigger = galaxy_size
+        huge = {
+            ehof_origin_initialize_system_2 = {
+                ehof_init_min_angle = $ehof_init_min_angle$
+                ehof_init_max_angle = $ehof_init_max_angle$
+                min_distance = @ehof_init_huge_min_distance
+                max_distance = @ehof_init_huge_max_distance
+            }
+        }
+        large = {
+            ehof_origin_initialize_system_2 = {
+                ehof_init_min_angle = $ehof_init_min_angle$
+                ehof_init_max_angle = $ehof_init_max_angle$
+                min_distance = @ehof_init_large_min_distance
+                max_distance = @ehof_init_large_max_distance
+            }
+        }
+        medium = {
+            ehof_origin_initialize_system_2 = {
+                ehof_init_min_angle = $ehof_init_min_angle$
+                ehof_init_max_angle = $ehof_init_max_angle$
+                min_distance = @ehof_init_medium_min_distance
+                max_distance = @ehof_init_medium_max_distance
+            }
+        }
+        small = {
+            ehof_origin_initialize_system_2 = {
+                ehof_init_min_angle = $ehof_init_min_angle$
+                ehof_init_max_angle = $ehof_init_max_angle$
+                min_distance = @ehof_init_small_min_distance
+                max_distance = @ehof_init_small_max_distance
+            }
+        }
+        tiny = {
+            ehof_origin_initialize_system_2 = {
+                ehof_init_min_angle = $ehof_init_min_angle$
+                ehof_init_max_angle = $ehof_init_max_angle$
+                min_distance = @ehof_init_tiny_min_distance
+                max_distance = @ehof_init_tiny_max_distance
+            }
+        }
+        default = {
+            ehof_origin_initialize_system_2 = {
+                ehof_init_min_angle = $ehof_init_min_angle$
+                ehof_init_max_angle = $ehof_init_max_angle$
+                min_distance = @ehof_init_default_min_distance
+                max_distance = @ehof_init_default_max_distance
+            }
+        }
+    }
+}
+
+ehof_origin_initialize_system_2 = {
+    no_scope = {
+        spawn_system = {
+            min_orientation_angle = $ehof_init_min_angle$
+            max_orientation_angle = $ehof_init_max_angle$
+            min_distance >= $min_distance$
+            max_distance <= $max_distance$
+            hyperlane = no
+            initializer = special_init_01
+            effect = {
+                save_event_target_as = giga_last_ehof_spawn
+            }
+        }
+        last_created_system = {
+            system_star = {
+                #prevent_anomaly = yes
+                giga_set_has_mega_flag = yes
+                clear_deposits = yes
+                giga_field_debris = yes
+            }
+            set_star_flag = empire_cluster
+            set_star_flag = ruined_ehof_system
+            spawn_megastructure = {
+                type = "ehof_megastructure_ruined_origin"
+            }
+            giga_field_system_debris = yes
+        }
+    }
+}
+
+ehof_spawn_cluster = {
+    if = {
+        limit = {
+            exists = event_target:current_system_creator
+        }
+        clear_global_event_target = current_system_creator
+    }
+    save_global_event_target_as = current_system_creator
+    set_country_flag = has_ehof_cluster
+    random_list = {
+        1 = {
+            modifier = {
+                factor = 0
+                has_global_flag = ehof_10_taken
+            }
+            set_global_flag = ehof_10_taken
+            ehof_origin_initialize_system = {
+                ehof_init_min_angle = @ehof_10_taken_min_angle
+                ehof_init_max_angle = @ehof_10_taken_max_angle
+            }
+        }
+        1 = {
+            modifier = {
+                factor = 0
+                has_global_flag = ehof_30_taken
+            }
+            set_global_flag = ehof_30_taken
+            ehof_origin_initialize_system = {
+                ehof_init_min_angle = @ehof_30_taken_min_angle
+                ehof_init_max_angle = @ehof_30_taken_max_angle
+            }
+        }
+        1 = {
+            modifier = {
+                factor = 0
+                has_global_flag = ehof_50_taken
+            }
+            set_global_flag = ehof_50_taken
+            ehof_origin_initialize_system = {
+                ehof_init_min_angle = @ehof_50_taken_min_angle
+                ehof_init_max_angle = @ehof_50_taken_max_angle
+            }
+        }
+        #1 = {
+        #	modifier = { factor = 0 has_global_flag = ehof_70_taken }
+        #	set_global_flag = ehof_70_taken
+        # ehof_origin_initialize_system = {
+        #	ehof_init_min_angle = @ehof_70_taken_min_angle
+        #	ehof_init_max_angle = @ehof_70_taken_max_angle
+        #}
+        #}
+        #1 = {
+        #
+        #
+        #
+        #	modifier = { factor = 0 has_global_flag = ehof_90_taken }
+        #	set_global_flag = ehof_90_taken
+        # ehof_origin_initialize_system = {
+        #	ehof_init_min_angle = @ehof_90_taken_min_angle
+        #	ehof_init_max_angle = @ehof_90_taken_max_angle
+        #}
+        #}
+        #1 = {
+        #	modifier = { factor = 0 has_global_flag = ehof_110_taken }
+        #	set_global_flag = ehof_110_taken
+        # ehof_origin_initialize_system = {
+        #	ehof_init_min_angle = @ehof_110_taken_min_angle
+        #	ehof_init_max_angle = @ehof_110_taken_max_angle
+        #}
+        #}
+        1 = {
+            modifier = {
+                factor = 0
+                has_global_flag = ehof_130_taken
+            }
+            set_global_flag = ehof_130_taken
+            ehof_origin_initialize_system = {
+                ehof_init_min_angle = @ehof_130_taken_min_angle
+                ehof_init_max_angle = @ehof_130_taken_max_angle
+            }
+        }
+        1 = {
+            modifier = {
+                factor = 0
+                has_global_flag = ehof_150_taken
+            }
+            set_global_flag = ehof_150_taken
+            ehof_origin_initialize_system = {
+                ehof_init_min_angle = @ehof_150_taken_min_angle
+                ehof_init_max_angle = @ehof_150_taken_max_angle
+            }
+        }
+        1 = {
+            modifier = {
+                factor = 0
+                has_global_flag = ehof_170_taken
+            }
+            set_global_flag = ehof_170_taken
+            ehof_origin_initialize_system = {
+                ehof_init_min_angle = @ehof_170_taken_min_angle
+                ehof_init_max_angle = @ehof_170_taken_max_angle
+            }
+        }
+        1 = {
+            modifier = {
+                factor = 0
+                has_global_flag = ehof_190_taken
+            }
+            set_global_flag = ehof_190_taken
+            ehof_origin_initialize_system = {
+                ehof_init_min_angle = @ehof_190_taken_min_angle
+                ehof_init_max_angle = @ehof_190_taken_max_angle
+            }
+        }
+        1 = {
+            modifier = {
+                factor = 0
+                has_global_flag = ehof_210_taken
+            }
+            set_global_flag = ehof_210_taken
+            ehof_origin_initialize_system = {
+                ehof_init_min_angle = @ehof_210_taken_min_angle
+                ehof_init_max_angle = @ehof_210_taken_max_angle
+            }
+        }
+        1 = {
+            modifier = {
+                factor = 0
+                has_global_flag = ehof_230_taken
+            }
+            set_global_flag = ehof_230_taken
+            ehof_origin_initialize_system = {
+                ehof_init_min_angle = @ehof_230_taken_min_angle
+                ehof_init_max_angle = @ehof_230_taken_max_angle
+            }
+        }
+        #1 = {
+        #	modifier = { factor = 0 has_global_flag = ehof_250_taken }
+        #	set_global_flag = ehof_250_taken
+        # ehof_origin_initialize_system = {
+        #	ehof_init_min_angle = @ehof_250_taken_min_angle
+        #	ehof_init_max_angle = @ehof_250_taken_max_angle
+        #}
+        #}
+        #1 = {
+        #	modifier = { factor = 0 has_global_flag = ehof_270_taken }
+        #	set_global_flag = ehof_270_taken
+        # ehof_origin_initialize_system = {
+        #	ehof_init_min_angle = @ehof_270_taken_min_angle
+        #	ehof_init_max_angle = @ehof_270_taken_max_angle
+        #}
+        #}
+        #1 = {
+        #	modifier = { factor = 0 has_global_flag = ehof_290_taken }
+        #	set_global_flag = ehof_290_taken
+        # ehof_origin_initialize_system = {
+        #	ehof_init_min_angle = @ehof_290_taken_min_angle
+        #	ehof_init_max_angle = @ehof_290_taken_max_angle
+        #}
+        #}
+        1 = {
+
+            modifier = {
+                factor = 0
+                has_global_flag = ehof_310_taken
+            }
+            set_global_flag = ehof_310_taken
+            ehof_origin_initialize_system = {
+                ehof_init_min_angle = @ehof_310_taken_min_angle
+                ehof_init_max_angle = @ehof_310_taken_max_angle
+            }
+
+        }
+        1 = {
+
+            modifier = {
+                factor = 0
+                has_global_flag = ehof_330_taken
+            }
+            set_global_flag = ehof_330_taken
+            ehof_origin_initialize_system = {
+                ehof_init_min_angle = @ehof_330_taken_min_angle
+                ehof_init_max_angle = @ehof_330_taken_max_angle
+            }
+        }
+        1 = {
+            modifier = {
+                factor = 0
+                has_global_flag = ehof_350_taken
+            }
+            set_global_flag = ehof_350_taken
+            ehof_origin_initialize_system = {
+                ehof_init_min_angle = @ehof_350_taken_min_angle
+                ehof_init_max_angle = @ehof_350_taken_max_angle
+            }
+        }
+    }
+}

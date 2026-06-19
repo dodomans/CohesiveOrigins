@@ -1,0 +1,26 @@
+#For randomly spawned systems, should always be a weighted random event with no 0 value
+#From = The system from which the new system will be generated (the system used as a location for reference, it should be one of the cohesive cluster systems)
+#This = Country firing the EHOF
+ehof_custom_random_spawn = {
+    random_events = {
+        # All weight 100, only one will be viable for any given empire
+        # Total weight split 1:1 against the base gigas event
+        100 = ehof_origin_special_system_spawning.001 # Arc Furnace Rich System
+    }
+}
+
+# ehof_giga_new_create_new_continuous_system = {
+#     initializer = "random"
+# }
+
+# Replace INIT
+
+
+# event_target:giga_last_ehof_spawn = {
+#     system_event = { id = ehof_giga_new_on_action.6 }
+# }
+
+# Replaces Bypasses, though custom init shouldn't haven't any, just to be safe.
+
+
+# log = "Spawning cohesive system" # Include type of system, like Arc Furnace Rich System etc
